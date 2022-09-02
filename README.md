@@ -14,6 +14,6 @@
 ### Project setup
 
 - docker pull schnapsterdog/nginx-docker-container:latest
-- docker run --rm -p 80:80 nginx-docker-container:latest
+- docker run --rm -p 80:80 schnapsterdog/nginx-docker-container:latest
 - go to localhost url
 
