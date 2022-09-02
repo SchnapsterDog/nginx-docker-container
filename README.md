@@ -11,9 +11,21 @@
 
 ## ⚙ Installation
 
-### Project setup
+### Project setup for Windows Users
 
-- docker pull schnapsterdog/nginx-docker-container:latest
-- docker run --rm -p 80:80 nginx-docker-container:latest
-- go to localhost url
+- open ubuntu app on windows
+- create projects folder at top level
+- clone the schnapsterdog/nginx-docker-container repo from github inside projects folder
+- pull the image from dockerhub with docker pull schnapsterdog/nginx-docker-container:latest
+- get the full path of the nginx-docker-container project -> will need for runing the project
+- run the image with docker run --rm -p 80:80 -v /home/yourUbuntuUserName/projects/nginx-docker-container/src:/var/www/html/public schnapsterdog/nginx-docker-container
 
+#### Real time modification
+
+- 👉 Now you will be able to see the page that comes from the project using nginx. Just type localhost inside your browser.
+- 👉 You can open another terminal of ubuntu in windows. Navigate to the projects/nginx-docker-container and type code .
+- 👉 The project will be openned withing your code editor. If you change something inside src/index.html file, the changes will be applied immediatelly.
+
+## Contact
+
+If you need to learn more about running docker containers, setting up nginx server, please send an e-mail to me via [oliver@akrinum.com](mailto:oliver@akrinum.com).
